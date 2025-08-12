@@ -6,10 +6,10 @@ The goal is to learn recommendation algorithms while building a functional mini-
 ---
 
 ## 🚀 Project Overview
-- **Type:** Content-based 
+- **Type:** Content-based & collaborative filtering (ratings-based)
 - **Language:** Python
 - **Libraries:** pandas, numpy, scikit-learn (add others you use)
-- **Current Status:** ~50% complete
+- **Current Status:** ~40% complete
 
 ---
 
@@ -19,9 +19,10 @@ The goal is to learn recommendation algorithms while building a functional mini-
 ---
 
 ## ✅ Features Implemented
-- Data loading & preprocessing
-- Similarity calculations (if done)
-- Basic recommendation logic
-
+- **Content-Based Filtering**
+  - Uses movie metadata (e.g., genres) to calculate similarity.
+  - Cosine similarity for recommendations.
+- **Ratings-Based Filtering**
+  - Aggregates ratings to recommend highly-rated movies.
 ---
 
