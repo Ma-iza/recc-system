@@ -35,5 +35,6 @@ Then open the local URL shown in your terminal.
 ## Notes
 
 - The app uses an API key inside `recc.py` to fetch posters from TMDB.
-- Make sure `movies_metadata.csv` is present in the project root.
+- Make sure `movies_metadata.csv` is present in the project root and included in the deployed repo.
+- Streamlit Cloud must receive `movies_metadata.csv` as part of the app files; otherwise the app cannot load recommendations.
 - If the app renders HTML as text, use `unsafe_allow_html=True` in `st.markdown` only for the card markup.
