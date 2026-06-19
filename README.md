@@ -4,7 +4,7 @@ A Streamlit-based movie recommendation app that uses content-based filtering ove
 
 ## What it does
 
-- Loads movie metadata from `movies_metadata.csv`
+- Loads movie metadata from `movies_metadata_small.csv`
 - Builds a TF-IDF matrix over movie overviews
 - Computes cosine similarity to recommend similar movies
 - Displays recommendations in a Streamlit app with poster images and hoverable movie cards
