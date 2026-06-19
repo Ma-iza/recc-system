@@ -1,12 +1,21 @@
 import pandas as pd
 import requests
+from pathlib import Path
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-
 from sklearn.metrics.pairwise import linear_kernel
 
-metadata = pd.read_csv("movies_metadata.csv")
+ROOT_DIR = Path(__file__).resolve().parent
+METADATA_PATH = ROOT_DIR / "movies_metadata.csv"
+
+if not METADATA_PATH.exists():
+    raise FileNotFoundError(
+        f"Required data file not found: {METADATA_PATH}. "
+        "Make sure movies_metadata.csv is present in the repo root."
+    )
+
+metadata = pd.read_csv(METADATA_PATH)
 metadata = metadata.reset_index(drop=True)
 metadata = metadata[
     metadata["overview"].notna()
