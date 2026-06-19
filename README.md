@@ -14,19 +14,7 @@ A Streamlit-based movie recommendation app that uses content-based filtering ove
 - `app.py` - Streamlit app entry point
 - `recc.py` - Recommendation logic and poster fetching
 - `movies_metadata.csv` - Movie dataset used for recommendations
-- `index.html` - Example static HTML file in the repo
-- `styles.css` - Empty stylesheet file included in the repo
 - `recc.ipynb` - Notebook for development / exploration
-- `rockmine.ipynb` - Additional notebook file
-- `sonar data.csv` - Secondary dataset file
-
-## Requirements
-
-- Python 3.8+
-- `streamlit`
-- `pandas`
-- `scikit-learn`
-- `requests`
 
 ## Install
 
