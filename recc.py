@@ -7,12 +7,12 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.metrics.pairwise import linear_kernel
 
 ROOT_DIR = Path(__file__).resolve().parent
-METADATA_PATH = ROOT_DIR / "movies_metadata.csv"
+METADATA_PATH = ROOT_DIR / "movies_metadata_small.csv"
 
 if not METADATA_PATH.exists():
     raise FileNotFoundError(
         f"Required data file not found: {METADATA_PATH}. "
-        "Make sure movies_metadata.csv is present in the repo root."
+        "Make sure movies_metadata_small.csv is present in the repo root."
     )
 
 metadata = pd.read_csv(METADATA_PATH)
