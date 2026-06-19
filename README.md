@@ -31,6 +31,10 @@ streamlit run app.py
 ```
 
 Then open the local URL shown in your terminal.
+## Screenshots
+<img width="956" height="463" alt="rec1" src="https://github.com/user-attachments/assets/dadde35a-90ad-4685-bad4-48fe35026b33" />
+<img width="959" height="370" alt="rec2" src="https://github.com/user-attachments/assets/43b7ccb4-3dae-4798-b494-5115f2cea58a" />
+
 
 ## Notes
 
